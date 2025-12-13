@@ -1,55 +1,53 @@
 ---
-title: Quickstart
-permalink: /docs/
-redirect_from:
+عنوان: Quickstart
+رابط دائم: /docs/
+إعادة_التوجيه_من:
   - /docs/home/
   - /docs/quickstart/
   - /docs/extras/
 ---
-Jekyll is a static site generator. It takes text written in your
-favorite markup language and uses layouts to create a static website. You can
-tweak the site's look and feel, URLs, the data displayed on the page, and more. 
+جيكل هو مولد مواقع ثابتة. يأخذ النص المكتوب بلغة الترميز المفضلة لديك ويستخدم التخطيطات لإنشاء موقع ويب ثابت. يمكنك
+تعديل مظهر الموقع ووظائفه، وعناوين URL، والبيانات المعروضة على الصفحة، وغير ذلك. 
 
-## Prerequisites
+## المتطلبات الأساسية
 
-Jekyll requires the following:
+يتطلب برنامج جيكل ما يلي:
 
-* Ruby version **{{ site.data.ruby.min_version }}** or higher
-* RubyGems
-* GCC and Make
+* إصدار روبي **{{ site.data.ruby.min_version }}** أو أعلى
+* روبي جيمز
+* مجلس التعاون الخليجي وصنع
 
-See [Requirements]({{ '/docs/installation/#requirements' | relative_url }}) for guides and details.
+يرى [متطلبات]({{ '/docs/installation/#requirements' | relative_url }}) للحصول على الأدلة والتفاصيل.
+## تعليمات
 
-## Instructions
-
-1. Install all [prerequisites]({{ '/docs/installation/' | relative_url }}).
-2. Install the jekyll and bundler [gems]({{ '/docs/ruby-101/#gems' | relative_url }}).
+1. قم بتثبيت جميع [المتطلبات الأساسية]({{ '/docs/installation/' | relative_url }}).
+2. قم بتثبيت jekyll و bundler [gems]({{ '/docs/ruby-101/#gems' | relative_url }}).
 ```sh
 gem install jekyll bundler
 ```
-3. Create a new Jekyll site at `./myblog`.
+3. أنشئ موقع جيكيل جديد على `./مدونتي`.
 ```sh
-jekyll new myblog
+مدونتي الجديدة جيكل
 ```
-4. Change into your new directory.
+4. انتقل إلى دليلك الجديد.
 ```sh
-cd myblog
+cd مدونتي
 ```
-5. Build the site and make it available on a local server.
+5. قم ببناء الموقع واجعله متاحًا على خادم محلي.
 ```sh
 bundle exec jekyll serve
 ```
-6. Browse to [http://localhost:4000](http://localhost:4000){:target="_blank"}
+6. تصفح إلى [http://localhost:4000](http://localhost:4000){:target="_blank"}
 
 {: .note .warning}
-If you are using Ruby version 3.0.0 or higher, step 5 [may fail](https://github.com/github/pages-gem/issues/752). You may fix it by adding `webrick` to your dependencies: `bundle add webrick`
+إذا كنت تستخدم إصدار Ruby 3.0.0 أو أعلى، ف[قد تفشل] الخطوة 5.(https://github.com/github/pages-gem/issues/752). يمكنك حل المشكلة بإضافة `webrick` إلى تبعياتك: `bundle add webrick``
 
 {: .note .info}
-Pass the `--livereload` option to `serve` to automatically refresh the page with each change you make to the source files: `bundle exec jekyll serve --livereload`
+قم بتمرير خيار `--livereload` إلى `serve` لتحديث الصفحة تلقائيًا مع كل تغيير تُجريه على ملفات المصدر: `bundle exec` jekyll serve --livereload`
 
 
-If you encounter any errors during this process, check that you have installed all the prerequisites in [Requirements]({{ '/docs/installation/#requirements' | relative_url }}). 
-If you still have issues, see [Troubleshooting]({{ '/docs/troubleshooting/#configuration-problems' | relative_url }}).
+إذا واجهت أي أخطاء أثناء هذه العملية، فتحقق من تثبيت جميع المتطلبات الأساسية في [المتطلبات]({{ '/docs/installation/#requirements' | relative_url }}). 
+إذا استمرت المشكلة، راجع [استكشاف الأخطاء وإصلاحها]({{ '/docs/troubleshooting/#configuration-problems' | relative_url }}).
 
 {: .note .info}
-Installation varies based on your operating system. See our [guides]({{ '/docs/installation/#guides' | relative_url }}) for OS-specific instructions.
+تختلف طريقة التثبيت باختلاف نظام التشغيل الخاص بك. راجع [أدلتنا]({{ '/docs/installation/#guides' | relative_url }}) للحصول على تعليمات خاصة بنظام التشغيل.
